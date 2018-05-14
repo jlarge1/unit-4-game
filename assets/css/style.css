@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
+
+#content {
+    background: #fafafa;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border: 2px solid #333;
+    min-width: 650px;
+
+}
+
+#instructions {
+    background: #EBF4FD;
+    opacity: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border: 2px solid #333;
+   
+    display:none;
+    z-index:1;
+    
+}
+
+#instructions p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+.title {
+    background: #fafafa;
+    width: 100%;
+    position: absolute;
+    font-size: 5vw;
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#num {
+    font-size: 6vw;
+}
+#playerTotal {
+    font-size: 6vw;
+}
+
+.crystal {
+    display:inline-block;
+    position: relative;
+}
+    .crystal img {
+        width: 150px;
+    }
+
+#pTitle {
+    font-size: 20px;
+}
+
+#gameTitle {
+    font-size:6vw;
+
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.close {
+    font-size:6vw;
+}
