@@ -148,9 +148,9 @@ $("#c0").mouseover(function () {
 $("#c1").mouseover(function () {
     var counter = 0,
         timer = setInterval(function() {
-            $("#c1").attr("src", crystal1Hover[counter]);
+            $("#c1").attr("src", crystal3Hover[counter]);
             counter++
-            if (counter == crystal1Hover.length) {
+            if (counter == crystal3Hover.length) {
                 clearInterval(timer);
             }
         }, 50);
@@ -168,9 +168,9 @@ $("#c2").mouseover(function () {
 $("#c3").mouseover(function () {
     var counter = 0,
         timer = setInterval(function() {
-            $("#c3").attr("src", crystal3Hover[counter]);
+            $("#c3").attr("src", crystal1Hover[counter]);
             counter++
-            if (counter == crystal3Hover.length) {
+            if (counter == crystal1Hover.length) {
                 clearInterval(timer);
             }
         }, 50);

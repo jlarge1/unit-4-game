@@ -5,6 +5,7 @@
 body, html {
     margin: 0px;
     padding: 0px;
+    background: #EBF4FD;
 }
 
 #content {
@@ -44,7 +45,7 @@ body, html {
     background: #fafafa;
     width: 100%;
     position: absolute;
-    font-size: 5vw;
+    font-size: 120px;
     margin-bottom: 20px;
 }
 
@@ -72,8 +73,17 @@ body, html {
 }
 
 #gameTitle {
-    font-size:6vw;
+    font-size:120px;
 
+}
+
+#divTitle {
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 34px;
 }
 
 .show {
@@ -84,6 +94,18 @@ body, html {
     display: none;
 }
 
-.close {
-    font-size:6vw;
+#close, #instruct {
+    font-size:25px;
+    margin-bottom:10px;
+    font-weight:800;
+}
+#instructTitle {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+#instruct:hover, #close:hover {
+    font-style: oblique;
+}
+#instruct:active, #close:active {
+    color: #fafafa;
 }
