@@ -89,37 +89,47 @@ function game(x) {
         var crystal = ($(this).attr("id"));
         playerTotal += crystalValue[crystal];
         $("#playerTotal").text(playerTotal);
-        console.log(x, playerTotal);
+        
 
         if (playerTotal > x) {
-            $("#playerTotal").attr("style", "font-size: 4vw;");
-            $("#playerTotal").text("You lost");
-            setTimeout(function () { window.location.reload(true); }, 1500);
+            //$("#playerTotal").attr("style", "font-size: 4vw;");
+            //$("#playerTotal").text("You lost");
+            $("#instructions").fadeIn();
+            $("#instructions").prepend("You lost!");
+            $("#ins").attr("class","hide");
+            $("#instructTitle").attr("class", "hide");
+            $(".crystal").attr("class", "hide");
+            $("#content").attr("class","hide");
+            $("#close").text("Reset Game");
+            $("#close").on("click", function() {
+                window.location.reload(true);
+            });
+            //setTimeout(function () { window.location.reload(true); }, 1500);
 
         } else if (playerTotal == x) {
-            $("#playerTotal").attr("style", "font-size: 4vw;");
-            $("#playerTotal").text("You win!");
-            setTimeout(function () { window.location.reload(true); }, 1500);
+            //$("#playerTotal").attr("class", "hide");
+            //$("#playerTotal").text("You win!");
+            $("#instructions").fadeIn();
+            $("#instructions").prepend("You win!");
+            $("#ins").attr("class","hide");
+            $("#instructTitle").attr("class", "hide");
+            $(".crystal").attr("class", "hide");
+            $("#content").attr("class","hide");
+            $("#close").text("Reset Game");
+            $("#close").on("click", function() {
+                window.location.reload(true);
+            });
+            //setTimeout(function () { window.location.reload(true); }, 1500);
 
         }
     });
 
 }
 
-function reset() {
-    console.log("reset");
-    var x = Math.floor(Math.random() * 101) + 19;
-    crystalValue = [];
-    playerTotal = 0;
-    main(x);
-}
-
-
 
 function main(x) {
     initialize(x);
     game(x);
-
 }
 
 // run ===================================

@@ -5,53 +5,58 @@
     <meta charset="UTF-8">
     <title>Crystal Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ramaraja" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div id="instructions" class="text-center">
-        <div id="instructTitle">Instructions:</div>
-        
-        <p>
-            Each large crystal has a mystery value of
-            <br>smaller crystals that are mined when clicked.
-        </p>
-        <p>
-            You are tasked with collecting a 
-            <br>target amount of mined crystals.
-        </p>
-        <p>
-            Make sure you don't go over the target amount!
-        </p>
-
-        <div id="close">Close</div>
-    </div>
-
-    <div id="content" class="text-center">
-        <div id="divTitle">
-            <div id="gameTitle">Crystal Collector</div>
-            <div id="instruct">Instructions</div>
-        </div>
-        <div id="pTitle">Target:</div>
-        <div id="num"></div>
-        <div id="pTitle">Crystals Mined:</div>
-        <div id="playerTotal"></div>
-        <div id="0" class="crystal">
-            <img id="c0" src="assets/media/0/000.svg">
-        </div>
-        <div id="1" class="crystal">
-            <img id="c1" src="assets/media/3/000.svg">
-        </div>
-        <div id="2" class="crystal">
-            <img id="c2" src="assets/media/2/000.svg">
-        </div>
-        <div id="3" class="crystal">
-            <img id="c3" src="assets/media/1/000.svg">
+    <div id="background">
+        <div id="instructions" class="text-center">
+            <div id="instructTitle">Instructions:</div>
+            <div id="ins">
+                <p>
+                    Each large crystal has a mystery value of
+                    <br>smaller crystals that are mined when clicked.
+                </p>
+                <p>
+                    You are tasked with collecting a
+                    <br>target amount of mined crystals.
+                </p>
+                <p>
+                    Make sure you don't go over the target amount!
+                </p>
+                <br>
+            </div>
+            <div id="close">Close</div>
         </div>
 
+        <div id="content" class="text-center">
+            <div id="divTitle">
+                <div id="gameTitle">Crystal Collector</div>
+                <div id="instruct">Instructions</div>
+            </div>
+            <div id="pTitle">Target:</div>
+            <div id="num"></div>
+            <div id="pTitle">Crystals Mined:</div>
+            <div id="playerTotal"></div>
+            <div id="0" class="crystal">
+                <img id="c0" src="assets/media/0/000.svg">
+            </div>
+            <div id="1" class="crystal">
+                <img id="c1" src="assets/media/3/000.svg">
+            </div>
+            <div id="2" class="crystal">
+                <img id="c2" src="assets/media/2/000.svg">
+            </div>
+            <div id="3" class="crystal">
+                <img id="c3" src="assets/media/1/000.svg">
+            </div>
 
+
+        </div>
     </div>
     <script src="assets/javascript/game.js"></script>
 </body>
